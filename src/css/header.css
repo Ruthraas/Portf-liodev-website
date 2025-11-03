@@ -1,40 +1,47 @@
 .hero-header {
     background: url(../../src/assets/background/Background_Intro.png);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 57px;
-    height: 100vh;
-    overflow: hidden;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center; 
+    height: 100%;
+    width: 100%;
     text-align: center;
-    padding-inline: 0;
-
 }
 
 .hero-content {
-    max-width: 800px;   
+    max-width: 1040px;
     .hero-profile {
+        padding-block: 120px 83px;
+        padding-inline: 163px;
         position: relative;
-        margin-bottom: 56px;
         display: inline-block;
+
+        .profile-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
         .profile-photo {
             border-radius: 50%;
             padding: 3px;
             border: 3px var(--red) solid;
         }
+
         .profile-vector {
             position: absolute;
             width: 32px;
             height: 32px;
-            bottom: 1px;
-            right: -4px;
+            bottom: -2px;
+            right: -2px;
             color: var(--green);
             font-family: var(--font-inconsolata);
             border: 1px var(--gray-500);
+            z-index: 1;
         }
     }
 }
@@ -56,7 +63,7 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        img {
+        img {   
             width: 24px;
             height: 24px;
         }

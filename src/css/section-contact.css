@@ -1,0 +1,67 @@
+#contact {
+    background: url(../../src/assets/background/Background_Contacts.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-block: 88px 120px;
+    padding-inline: 120px;
+}
+
+#contact .contact-content {
+    text-align: center;
+}
+
+#contact .contact-content h2,
+#contact .contact-content h4 {
+    margin-bottom: 8px;
+}
+
+#contact .contact-content h3 {
+    margin-bottom: 48px;
+}
+
+#contact #cards-tables {
+    display: grid;
+    gap: 16px; 
+    width: 400px; 
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+#contact #cards-tables .card-table {
+    width: 400px; 
+    height: 68px; 
+    display: grid;
+    grid-template-columns: 32px 1fr 24px;
+    align-items: center;
+    gap: 12px; 
+    background-color: var(--gray-400); 
+    border: 1px solid var(--gray-400); 
+    border-radius: 8px; 
+    padding: 20px; 
+    overflow: hidden; 
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+#contact #cards-tables .card-table:hover {
+    border-color: var(--blue); 
+}
+
+#contact #cards-tables .card-table img {
+    width: 32px;
+    height: 32px;
+}
+
+#contact #cards-tables .card-table .arrow-icon {
+    width: 24px;
+    height: 24px;
+    justify-self: end;
+}
